@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\user1\Desktop\semi_say\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2183676915.index
+4081454806.index
+2469931547.index
+1388845097.index
