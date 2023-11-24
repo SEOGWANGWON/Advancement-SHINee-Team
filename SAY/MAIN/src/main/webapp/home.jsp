@@ -34,7 +34,7 @@
 	            </aside>
 	            <section>
 	                <div class="bluetop" style="margin-top:20px; width:1200px;">
-	                    <p style="margin-top:5px">Welcome to SHINee Music !</p>
+	                    <p style="margin-top:5px">Update My Info</p>
 	                </div>
 	                <div style="width:1200px; height:30px; background-color: gray;">
 	                </div>
@@ -51,7 +51,7 @@
 	            </section>
 	        </div><!--container-->			
 		<%
-			}//else (로그아웃 상태에서 보여질 창)
+			} //else (로그아웃 상태에서 보여질 창)
 		%>
 		<script>
 			//창 이동 함수
@@ -59,11 +59,6 @@
 			//로그인하기 버튼 누르면 로그인 창으로 이동
 			document.getElementById("gotoLoginButton").addEventListener("click",()=>{
 				window.location.href = "login.jsp";
-			});
-			
-			//회원가입 버튼 누르면 회원가입 창으로 이동
-			document.getElementById("joinButton").addEventListener("click",()=>{
-				window.location.href = "Register_user.jsp";
 			});
 			
 			//검색버튼 누르면 검색 창으로 이동 (기본 음악검색)

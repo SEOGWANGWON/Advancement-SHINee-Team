@@ -22,7 +22,7 @@ function closeButton(){
 
     if(confirm("회원가입을 취소하시겠습니까?.")){
         alert("회원가입이 취소되었습니다.")
-        var pageMove = "home.jsp";
+        var pageMove = "https://music.apple.com/kr/browse";
         location.href=pageMove; 
     };
 };
