@@ -42,7 +42,7 @@ public class Create_Playlist_Servlet extends HttpServlet {
 		}
 		try {
 			Connection conn = DriverManager.getConnection(jdbcURL, jdbcUser, jdbcPW);
-			String sql = "INSERT INTO playlist_info(playlist_id,playlist_name,user_id,image)"+
+			String sql = "INSERT INTO playlist_info(playlist_id,user_id,playlist_name,image)"+
 			"VALUES(playlist_seq.nextval,?,?,?)";
 			
 			PreparedStatement ps = conn.prepareStatement(sql);

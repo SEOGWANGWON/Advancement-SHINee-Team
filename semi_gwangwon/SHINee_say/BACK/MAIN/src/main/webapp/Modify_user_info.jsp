@@ -12,7 +12,7 @@
     </head>
     <body>
         <div class="pageColor">
-            <div class="TabColor"><img src="images/mypage.png" class="TabiconImage"><strong class="TabTextStyle">Modify My Info</strong> 
+            <div class="TabColor"><img src="img/mypage.png" class="TabiconImage"><strong class="TabTextStyle">Modify My Info</strong> 
                 <button id="pageCloseButton" class="pageCloseButton" onclick="closeButton()"><Strong class="pageCloseButtonText">X</Strong></button>
             </div>          
              
@@ -29,7 +29,7 @@
                    %>
                 <div id="divid">
                     <label for="user_id">
-                        <img class="iconImg" src="images/user.png">
+                        <img class="iconImg" src="img/user.png">
                     </label>
                     <input name="user_id" type="text" value="<%= userinfo.getUser_id() %>" readonly="readonly">
                    
@@ -37,21 +37,21 @@
                 </div>
                 <div>
                     <label for="user_name">
-                        <img class="iconImg" src="images/name.png">
+                        <img class="iconImg" src="img/name.png">
                     </label>
                     <input name="user_name" type="text" value= "<%= userinfo.getUser_name() %>">
                     <p id="rulename"></p>
                 </div>
                 <div>
                     <label for="user_password">
-                        <img class="iconImg" src="images/password.png">
+                        <img class="iconImg" src="img/password.png">
                     </label>
                     <input name="user_password" type="password"  oninput="pwCheck()"  value="<%=userinfo.getUser_password() %>">
                     <p id="rulepm"></p>
                 </div>
                 <div>
                     <label for="checkpw">
-                       <img class="iconImg" src="images/passwordcheck.png">
+                       <img class="iconImg" src="img/passwordcheck.png">
                     </label>
                     <input id="checkpw" type="password" oninput="pwCheck()" placeholder="비밀번호 확인">
                     <span id="checkpm"></span>
@@ -59,7 +59,7 @@
                 <br>
                 <div>
                     <label for="user_nickname">
-                        <img class="iconImg" src="images/profile.png">
+                        <img class="iconImg" src="img/profile.png">
                     </label>
                     <input name="user_nickname"  type="text" value="<%=userinfo.getUser_nickname()%>">
                     <p id="rulenickname"></p>
@@ -79,7 +79,7 @@
                 <br>
                 <div>
                     <label for="email">
-                        <img class="iconImg" src="images/email.png">
+                        <img class="iconImg" src="img/email.png">
                     </label>
                     <input name="email" type="text" value="<%=userinfo.getEmail() %>">
                     <p id="ruleemail"></p>
@@ -87,7 +87,7 @@
                 
                 <div>
                     <label for="phone_number">
-                        <img class="iconImg" src="images/phone.png">
+                        <img class="iconImg" src="img/phone.png">
                     </label>
                     <input name="phone_number" type="text" value="<%=userinfo.getPhone_number() %>">
                     <p id="rulephoneNumber"></p>

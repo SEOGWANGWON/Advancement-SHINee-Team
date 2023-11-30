@@ -7,6 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Base64;
 
 import shinee.vo.Music_info_VO;
 import shinee.vo.Playlist_info_VO;
@@ -63,7 +64,7 @@ import shinee.vo.User_info_VO;
 					//이미지 가져오기
 					Blob blob = resultSet.getBlob("album_img");
 					byte[] imageData = blob.getBytes(1, (int) blob.length());
-					String imageBase64 = java.util.Base64.getEncoder().encodeToString(imageData);
+					String imageBase64 = Base64.getEncoder().encodeToString(imageData);
 					String album_image = "data:image/jpeg;base64, " + imageBase64;
 					
 					music_info.setAlbum_img(album_image);
