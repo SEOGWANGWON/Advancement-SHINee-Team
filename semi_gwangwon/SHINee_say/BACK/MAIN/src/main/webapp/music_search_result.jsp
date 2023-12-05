@@ -103,7 +103,16 @@
 										</div>
 									</div>
 									<div style="float: left; margin-left: 15px; width:100px; height: 100px; margin-top: 10px; background-color: white; box-shadow:inset;">
-										<img src="<%=m.getAlbum_img()%>" alt="앨범이미지" style="height: 100px; width:100px;">
+										<%if(m.getAlbum_img()==null){ %>
+											<img class="profile" src="img/알계.jpg" style="width: 100px; height: 100px;">
+										<%
+											}else{ 
+										%>
+												<img src="<%=m.getAlbum_img()%>" alt="앨범이미지" style="height: 100px; width:100px;">
+										<% 
+											}
+										%>
+									
 									</div>
 									<div style="float:right; width: 50%; text-align: left;">
 										<div style="margin-top:20px; width:150px; height: 30px;"><p>제목 : <%=m.getSong_name()%></p></div>

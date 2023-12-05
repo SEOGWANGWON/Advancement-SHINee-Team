@@ -25,7 +25,7 @@ public class AddMusic_Servlet extends HttpServlet {
 		//플레이리스트 필드...
 		int playlist_id = Integer.parseInt(request.getParameter("playlistField"));
 		
-		String music_id = (String)request.getParameter("music_data");
+		int music_id = Integer.parseInt(request.getParameter("music_data"));
 		
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -34,7 +34,7 @@ public class AddMusic_Servlet extends HttpServlet {
 			PreparedStatement ps = conn.prepareStatement(insertSQL);
 			//ps.setString(1, "searchField값을 받아와야합니다!!!어디서?music_search의 플레이리스트 목록거기에서~!!!!");
 			ps.setInt(1, playlist_id);
-			ps.setString(2, music_id);
+			ps.setInt(2, music_id);
 			
 			int rowsInserted = ps.executeUpdate();
 			if(rowsInserted >0) {

@@ -102,7 +102,7 @@ request.setCharacterEncoding("UTF-8");
 			
 			//마이플레이리스트 버튼
 			document.getElementById("gotoMyPlaylistButton").addEventListener("click",()=>{
-				window.location.href = "Myplaylist.jsp";
+				window.location.href = "MyPlaylist.jsp";
 			});
 			
 			//검색 카테고리 이동 버튼

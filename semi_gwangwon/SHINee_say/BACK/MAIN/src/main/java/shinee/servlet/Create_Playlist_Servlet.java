@@ -47,8 +47,8 @@ public class Create_Playlist_Servlet extends HttpServlet {
 			
 			PreparedStatement ps = conn.prepareStatement(sql);
 			
-			ps.setString(1, title);
-			ps.setString(2, user_id);
+			ps.setString(1, user_id);
+			ps.setString(2, title);
 			ps.setBinaryStream(3, imagePart.getInputStream(),(int) imagePart.getSize());
 			
 			ps.executeUpdate();
